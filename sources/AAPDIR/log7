@@ -1,0 +1,427 @@
+extra:	Reading recipe "main.aap"
+extra:	Reading recipe "pyzor.aap"
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/common.o : common/common.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/common.o} common/common.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/hash.o : common/hash.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/hash.o} common/hash.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o : common/daemon.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o} common/daemon.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/httpd.o : common/httpd.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/httpd.o} common/httpd.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/packet.o : common/packet.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/packet.o} common/packet.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/record.o : common/record.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/record.o} common/record.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/statistics.o : common/statistics.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/statistics.o} common/statistics.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/syslog.o : common/syslog.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/syslog.o} common/syslog.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/update.o : common/update.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/update.o} common/update.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/base64.o : common/base64.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/base64.o} common/base64.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/wget.o : common/wget.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/wget.o} common/wget.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/url.o : common/url.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/url.o} common/url.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/license.o : common/license.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/license.o} common/license.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-master.o : pyzor/pyzord-master.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-master.o} pyzor/pyzord-master.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/master.o : common/master.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/master.o} common/master.cpp
+depend:	Adding dependency:
+	pyzord-master{comment=build program "pyzord-master"}{filetypehint=program} : build-Linux2_6_24_16_server-Hardy-Release/common/common.o build-Linux2_6_24_16_server-Hardy-Release/common/hash.o build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o build-Linux2_6_24_16_server-Hardy-Release/common/httpd.o build-Linux2_6_24_16_server-Hardy-Release/common/packet.o build-Linux2_6_24_16_server-Hardy-Release/common/record.o build-Linux2_6_24_16_server-Hardy-Release/common/statistics.o build-Linux2_6_24_16_server-Hardy-Release/common/syslog.o build-Linux2_6_24_16_server-Hardy-Release/common/update.o build-Linux2_6_24_16_server-Hardy-Release/common/base64.o build-Linux2_6_24_16_server-Hardy-Release/common/wget.o build-Linux2_6_24_16_server-Hardy-Release/common/url.o build-Linux2_6_24_16_server-Hardy-Release/common/license.o build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-master.o build-Linux2_6_24_16_server-Hardy-Release/common/master.o
+	  :do build {target = $+target} $source
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-slave.o : pyzor/pyzord-slave.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-slave.o} pyzor/pyzord-slave.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/slave.o : common/slave.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/slave.o} common/slave.cpp
+depend:	Adding dependency:
+	pyzord-slave{comment=build program "pyzord-slave"}{filetypehint=program} : build-Linux2_6_24_16_server-Hardy-Release/common/common.o build-Linux2_6_24_16_server-Hardy-Release/common/hash.o build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o build-Linux2_6_24_16_server-Hardy-Release/common/httpd.o build-Linux2_6_24_16_server-Hardy-Release/common/packet.o build-Linux2_6_24_16_server-Hardy-Release/common/record.o build-Linux2_6_24_16_server-Hardy-Release/common/statistics.o build-Linux2_6_24_16_server-Hardy-Release/common/syslog.o build-Linux2_6_24_16_server-Hardy-Release/common/update.o build-Linux2_6_24_16_server-Hardy-Release/common/base64.o build-Linux2_6_24_16_server-Hardy-Release/common/wget.o build-Linux2_6_24_16_server-Hardy-Release/common/url.o build-Linux2_6_24_16_server-Hardy-Release/common/license.o build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-slave.o build-Linux2_6_24_16_server-Hardy-Release/common/slave.o
+	  :do build {target = $+target} $source
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-server.o : pyzor/pyzord-server.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-server.o} pyzor/pyzord-server.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/server.o : common/server.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/server.o} common/server.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/common/database.o : common/database.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/common/database.o} common/database.cpp
+depend:	Adding dependency:
+	pyzord-server{comment=build program "pyzord-server"}{filetypehint=program} : build-Linux2_6_24_16_server-Hardy-Release/common/common.o build-Linux2_6_24_16_server-Hardy-Release/common/hash.o build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o build-Linux2_6_24_16_server-Hardy-Release/common/httpd.o build-Linux2_6_24_16_server-Hardy-Release/common/packet.o build-Linux2_6_24_16_server-Hardy-Release/common/record.o build-Linux2_6_24_16_server-Hardy-Release/common/statistics.o build-Linux2_6_24_16_server-Hardy-Release/common/syslog.o build-Linux2_6_24_16_server-Hardy-Release/common/update.o build-Linux2_6_24_16_server-Hardy-Release/common/base64.o build-Linux2_6_24_16_server-Hardy-Release/common/wget.o build-Linux2_6_24_16_server-Hardy-Release/common/url.o build-Linux2_6_24_16_server-Hardy-Release/common/license.o build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-server.o build-Linux2_6_24_16_server-Hardy-Release/common/server.o build-Linux2_6_24_16_server-Hardy-Release/common/database.o
+	  :do build {target = $+target} $source
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-api.o : pyzor/pyzord-api.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-api.o} pyzor/pyzord-api.cpp
+depend:	Adding dependency:
+	pyzord-api{comment=build program "pyzord-api"}{filetypehint=program} : build-Linux2_6_24_16_server-Hardy-Release/common/common.o build-Linux2_6_24_16_server-Hardy-Release/common/hash.o build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o build-Linux2_6_24_16_server-Hardy-Release/common/httpd.o build-Linux2_6_24_16_server-Hardy-Release/common/packet.o build-Linux2_6_24_16_server-Hardy-Release/common/record.o build-Linux2_6_24_16_server-Hardy-Release/common/statistics.o build-Linux2_6_24_16_server-Hardy-Release/common/syslog.o build-Linux2_6_24_16_server-Hardy-Release/common/update.o build-Linux2_6_24_16_server-Hardy-Release/common/base64.o build-Linux2_6_24_16_server-Hardy-Release/common/wget.o build-Linux2_6_24_16_server-Hardy-Release/common/url.o build-Linux2_6_24_16_server-Hardy-Release/common/license.o build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-api.o build-Linux2_6_24_16_server-Hardy-Release/common/database.o
+	  :do build {target = $+target} $source
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-import.o : pyzor/pyzord-import.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-import.o} pyzor/pyzord-import.cpp
+depend:	Adding dependency:
+	pyzord-import{comment=build program "pyzord-import"}{filetypehint=program} : build-Linux2_6_24_16_server-Hardy-Release/common/common.o build-Linux2_6_24_16_server-Hardy-Release/common/hash.o build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o build-Linux2_6_24_16_server-Hardy-Release/common/httpd.o build-Linux2_6_24_16_server-Hardy-Release/common/packet.o build-Linux2_6_24_16_server-Hardy-Release/common/record.o build-Linux2_6_24_16_server-Hardy-Release/common/statistics.o build-Linux2_6_24_16_server-Hardy-Release/common/syslog.o build-Linux2_6_24_16_server-Hardy-Release/common/update.o build-Linux2_6_24_16_server-Hardy-Release/common/base64.o build-Linux2_6_24_16_server-Hardy-Release/common/wget.o build-Linux2_6_24_16_server-Hardy-Release/common/url.o build-Linux2_6_24_16_server-Hardy-Release/common/license.o build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-import.o
+	  :do build {target = $+target} $source
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-export.o : pyzor/pyzord-export.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-export.o} pyzor/pyzord-export.cpp
+depend:	Adding dependency:
+	pyzord-export{comment=build program "pyzord-export"}{filetypehint=program} : build-Linux2_6_24_16_server-Hardy-Release/common/common.o build-Linux2_6_24_16_server-Hardy-Release/common/hash.o build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o build-Linux2_6_24_16_server-Hardy-Release/common/httpd.o build-Linux2_6_24_16_server-Hardy-Release/common/packet.o build-Linux2_6_24_16_server-Hardy-Release/common/record.o build-Linux2_6_24_16_server-Hardy-Release/common/statistics.o build-Linux2_6_24_16_server-Hardy-Release/common/syslog.o build-Linux2_6_24_16_server-Hardy-Release/common/update.o build-Linux2_6_24_16_server-Hardy-Release/common/base64.o build-Linux2_6_24_16_server-Hardy-Release/common/wget.o build-Linux2_6_24_16_server-Hardy-Release/common/url.o build-Linux2_6_24_16_server-Hardy-Release/common/license.o build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-export.o
+	  :do build {target = $+target} $source
+extra:	Finished reading recipe "pyzor.aap"
+depend:	Adding default dependency for "clean"
+depend:	Adding default dependency for "cleanmore"
+extra:	Reading recipe "bohuno.aap"
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/bohuno/bohuno-updated.o : bohuno/bohuno-updated.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/bohuno/bohuno-updated.o} bohuno/bohuno-updated.cpp
+depend:	Adding dependency:
+	bohuno-updated{comment=build program "bohuno-updated"}{filetypehint=program} : build-Linux2_6_24_16_server-Hardy-Release/common/common.o build-Linux2_6_24_16_server-Hardy-Release/common/hash.o build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o build-Linux2_6_24_16_server-Hardy-Release/common/httpd.o build-Linux2_6_24_16_server-Hardy-Release/common/packet.o build-Linux2_6_24_16_server-Hardy-Release/common/record.o build-Linux2_6_24_16_server-Hardy-Release/common/statistics.o build-Linux2_6_24_16_server-Hardy-Release/common/syslog.o build-Linux2_6_24_16_server-Hardy-Release/common/update.o build-Linux2_6_24_16_server-Hardy-Release/common/base64.o build-Linux2_6_24_16_server-Hardy-Release/common/wget.o build-Linux2_6_24_16_server-Hardy-Release/common/url.o build-Linux2_6_24_16_server-Hardy-Release/common/license.o build-Linux2_6_24_16_server-Hardy-Release/bohuno/bohuno-updated.o build-Linux2_6_24_16_server-Hardy-Release/common/database.o
+	  :do build {target = $+target} $source
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/bohuno/bohuno-pyzord.o : bohuno/bohuno-pyzord.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/bohuno/bohuno-pyzord.o} bohuno/bohuno-pyzord.cpp
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/bohuno/bohuno-database.o : bohuno/bohuno-database.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/bohuno/bohuno-database.o} bohuno/bohuno-database.cpp
+depend:	Adding dependency:
+	bohuno-pyzord{comment=build program "bohuno-pyzord"}{filetypehint=program} : build-Linux2_6_24_16_server-Hardy-Release/common/common.o build-Linux2_6_24_16_server-Hardy-Release/common/hash.o build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o build-Linux2_6_24_16_server-Hardy-Release/common/httpd.o build-Linux2_6_24_16_server-Hardy-Release/common/packet.o build-Linux2_6_24_16_server-Hardy-Release/common/record.o build-Linux2_6_24_16_server-Hardy-Release/common/statistics.o build-Linux2_6_24_16_server-Hardy-Release/common/syslog.o build-Linux2_6_24_16_server-Hardy-Release/common/update.o build-Linux2_6_24_16_server-Hardy-Release/common/base64.o build-Linux2_6_24_16_server-Hardy-Release/common/wget.o build-Linux2_6_24_16_server-Hardy-Release/common/url.o build-Linux2_6_24_16_server-Hardy-Release/common/license.o build-Linux2_6_24_16_server-Hardy-Release/bohuno/bohuno-pyzord.o build-Linux2_6_24_16_server-Hardy-Release/bohuno/bohuno-database.o
+	  :do build {target = $+target} $source
+depend:	Adding dependency:
+	build-Linux2_6_24_16_server-Hardy-Release/bohuno/bohuno-pyzord-setup.o : bohuno/bohuno-pyzord-setup.cpp{depdir=build-Linux2_6_24_16_server-Hardy-Release}
+	  :do compile {target = build-Linux2_6_24_16_server-Hardy-Release/bohuno/bohuno-pyzord-setup.o} bohuno/bohuno-pyzord-setup.cpp
+depend:	Adding dependency:
+	bohuno-pyzord-setup{comment=build program "bohuno-pyzord-setup"}{filetypehint=program} : build-Linux2_6_24_16_server-Hardy-Release/common/common.o build-Linux2_6_24_16_server-Hardy-Release/common/hash.o build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o build-Linux2_6_24_16_server-Hardy-Release/common/httpd.o build-Linux2_6_24_16_server-Hardy-Release/common/packet.o build-Linux2_6_24_16_server-Hardy-Release/common/record.o build-Linux2_6_24_16_server-Hardy-Release/common/statistics.o build-Linux2_6_24_16_server-Hardy-Release/common/syslog.o build-Linux2_6_24_16_server-Hardy-Release/common/update.o build-Linux2_6_24_16_server-Hardy-Release/common/base64.o build-Linux2_6_24_16_server-Hardy-Release/common/wget.o build-Linux2_6_24_16_server-Hardy-Release/common/url.o build-Linux2_6_24_16_server-Hardy-Release/common/license.o build-Linux2_6_24_16_server-Hardy-Release/bohuno/bohuno-pyzord-setup.o build-Linux2_6_24_16_server-Hardy-Release/bohuno/bohuno-database.o
+	  :do build {target = $+target} $source
+extra:	Finished reading recipe "bohuno.aap"
+depend:	Adding default dependency for "clean"
+depend:	Adding default dependency for "cleanmore"
+extra:	Finished reading recipe "main.aap"
+depend:	Adding default dependency for "clean"
+depend:	Adding default dependency for "cleanmore"
+depend:	Building the "all" target
+depend:	1 - updating target "all"
+depend:	2 - Using dependency "all : pyzord-master pyzord-slave pyzord-server pyzord-api pyzord-import pyzord-export"
+depend:	3 - updating target "pyzord-master"
+depend:	4 - Using dependency "pyzord-master{comment=build program "pyzord-master"}{filetypehint=program} : build-Linux2_6_24_16_server-Hardy-Release/common/common.o build-Linux2_6_24_16_server-Hardy-Release/common/hash.o build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o build-Linux2_6_24_16_server-Hardy-Release/common/httpd.o build-Linux2_6_24_16_server-Hardy-Release/common/packet.o build-Linux2_6_24_16_server-Hardy-Release/common/record.o build-Linux2_6_24_16_server-Hardy-Release/common/statistics.o build-Linux2_6_24_16_server-Hardy-Release/common/syslog.o build-Linux2_6_24_16_server-Hardy-Release/common/update.o build-Linux2_6_24_16_server-Hardy-Release/common/base64.o build-Linux2_6_24_16_server-Hardy-Release/common/wget.o build-Linux2_6_24_16_server-Hardy-Release/common/url.o build-Linux2_6_24_16_server-Hardy-Release/common/license.o build-Linux2_6_24_16_server-Hardy-Release/pyzor/pyzord-master.o build-Linux2_6_24_16_server-Hardy-Release/common/master.o"
+depend:	5 - updating target "build-Linux2_6_24_16_server-Hardy-Release/common/common.o"
+depend:	6 - Using dependency "build-Linux2_6_24_16_server-Hardy-Release/common/common.o{filetype=object} : common/common.cpp{filetype=cpp}{depdir=build-Linux2_6_24_16_server-Hardy-Release}"
+depend:	7 - updating target "common/common.cpp"
+depend:	7 - Target has no build commands and exists: "common/common.cpp"
+depend:	7 - Using depend cpp for source "common/common.cpp"
+depend:	7 - Target "build-Linux2_6_24_16_server-Hardy-Release/common/common.cpp.aap" is up-to-date
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/basic_datagram_socket.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/basic_datagram_socket.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/push_options.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/push_options.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/pop_options.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/pop_options.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/basic_socket.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/basic_socket.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/basic_io_object.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/basic_io_object.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/io_service.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/io_service.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/error_code.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/error_code.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/error.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/error.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/socket_types.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/socket_types.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/impl/error_code.ipp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/impl/error_code.ipp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/local_free_on_block_exit.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/local_free_on_block_exit.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/dev_poll_reactor_fwd.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/dev_poll_reactor_fwd.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/epoll_reactor_fwd.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/epoll_reactor_fwd.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/kqueue_reactor_fwd.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/kqueue_reactor_fwd.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/noncopyable.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/noncopyable.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/select_reactor_fwd.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/select_reactor_fwd.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/service_registry_fwd.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/service_registry_fwd.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/signal_init.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/signal_init.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/task_io_service_fwd.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/task_io_service_fwd.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/win_iocp_io_service_fwd.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/win_iocp_io_service_fwd.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/winsock_init.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/winsock_init.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/wrapped_handler.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/wrapped_handler.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/bind_handler.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/bind_handler.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/handler_alloc_helpers.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/handler_alloc_helpers.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/handler_alloc_hook.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/handler_alloc_hook.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/handler_invoke_helpers.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/handler_invoke_helpers.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/handler_invoke_hook.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/handler_invoke_hook.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/impl/io_service.ipp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/impl/io_service.ipp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/dev_poll_reactor.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/dev_poll_reactor.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/epoll_reactor.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/epoll_reactor.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/system_error.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/system_error.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/hash_map.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/hash_map.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/mutex.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/mutex.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/posix_mutex.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/posix_mutex.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/scoped_lock.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/scoped_lock.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/task_io_service.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/task_io_service.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/call_stack.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/call_stack.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/tss_ptr.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/tss_ptr.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/posix_tss_ptr.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/posix_tss_ptr.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/event.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/event.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/posix_event.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/posix_event.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/handler_queue.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/handler_queue.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/service_base.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/service_base.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/service_id.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/service_id.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/thread.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/thread.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/posix_thread.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/posix_thread.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/reactor_op_queue.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/reactor_op_queue.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/select_interrupter.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/select_interrupter.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/pipe_select_interrupter.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/pipe_select_interrupter.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/socket_select_interrupter.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/socket_select_interrupter.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/socket_holder.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/socket_holder.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/socket_ops.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/socket_ops.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/signal_blocker.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/signal_blocker.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/posix_signal_blocker.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/posix_signal_blocker.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/timer_queue.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/timer_queue.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/timer_queue_base.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/timer_queue_base.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/kqueue_reactor.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/kqueue_reactor.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/select_reactor.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/select_reactor.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/fd_set_adapter.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/fd_set_adapter.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/posix_fd_set_adapter.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/posix_fd_set_adapter.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/win_fd_set_adapter.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/win_fd_set_adapter.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/service_registry.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/service_registry.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/throw_error.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/throw_error.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/win_iocp_io_service.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/win_iocp_io_service.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/socket_base.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/socket_base.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/io_control.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/io_control.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/socket_option.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/socket_option.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/datagram_socket_service.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/datagram_socket_service.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/reactive_socket_service.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/reactive_socket_service.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/buffer.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/buffer.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/win_iocp_socket_service.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/win_iocp_socket_service.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/basic_deadline_timer.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/basic_deadline_timer.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/deadline_timer_service.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/deadline_timer_service.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/time_traits.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/time_traits.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/deadline_timer_service.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/deadline_timer_service.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/basic_socket_acceptor.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/basic_socket_acceptor.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/socket_acceptor_service.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/socket_acceptor_service.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/basic_socket_iostream.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/basic_socket_iostream.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/basic_socket_streambuf.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/basic_socket_streambuf.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/stream_socket_service.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/stream_socket_service.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/basic_stream_socket.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/basic_stream_socket.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/basic_streambuf.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/basic_streambuf.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/buffered_read_stream_fwd.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/buffered_read_stream_fwd.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/buffered_read_stream.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/buffered_read_stream.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/buffer_resize_guard.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/buffer_resize_guard.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/buffered_stream_storage.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/buffered_stream_storage.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/buffered_stream_fwd.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/buffered_stream_fwd.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/buffered_stream.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/buffered_stream.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/buffered_write_stream.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/buffered_write_stream.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/buffered_write_stream_fwd.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/buffered_write_stream_fwd.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/completion_condition.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/completion_condition.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/write.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/write.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/impl/write.ipp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/impl/write.ipp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/consuming_buffers.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/consuming_buffers.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/deadline_timer.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/deadline_timer.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/address.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/address.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/address_v4.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/address_v4.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/address_v6.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/address_v6.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/basic_endpoint.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/basic_endpoint.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/basic_resolver.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/basic_resolver.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/resolver_service.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/resolver_service.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/resolver_service.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/resolver_service.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/basic_resolver_entry.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/basic_resolver_entry.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/basic_resolver_iterator.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/basic_resolver_iterator.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/basic_resolver_query.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/basic_resolver_query.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/resolver_query_base.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/resolver_query_base.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/host_name.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/host_name.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/multicast.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/multicast.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/detail/socket_option.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/detail/socket_option.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/tcp.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/tcp.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/udp.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/udp.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/unicast.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/unicast.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/ip/v6_only.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/ip/v6_only.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/is_read_buffered.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/is_read_buffered.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/is_write_buffered.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/is_write_buffered.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/placeholders.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/placeholders.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/read.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/read.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/impl/read.ipp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/impl/read.ipp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/read_until.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/read_until.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/impl/read_until.ipp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/impl/read_until.ipp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/const_buffers_iterator.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/const_buffers_iterator.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/strand.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/strand.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/detail/strand_service.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/detail/strand_service.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/streambuf.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/streambuf.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/thread.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/thread.hpp"
+depend:	8 - updating target "../dependencies/asio-0.3.9/include/asio/version.hpp"
+depend:	8 - Target has no build commands and exists: "../dependencies/asio-0.3.9/include/asio/version.hpp"
+depend:	8 - updating target "common/common.hpp"
+depend:	8 - Target has no build commands and exists: "common/common.hpp"
+depend:	8 - updating target "common/record.hpp"
+depend:	8 - Target has no build commands and exists: "common/record.hpp"
+depend:	5 - Target "build-Linux2_6_24_16_server-Hardy-Release/common/common.o" is up-to-date
+depend:	5 - updating target "build-Linux2_6_24_16_server-Hardy-Release/common/hash.o"
+depend:	6 - Using dependency "build-Linux2_6_24_16_server-Hardy-Release/common/hash.o{filetype=object} : common/hash.cpp{filetype=cpp}{depdir=build-Linux2_6_24_16_server-Hardy-Release}"
+depend:	7 - updating target "common/hash.cpp"
+depend:	7 - Target has no build commands and exists: "common/hash.cpp"
+depend:	7 - Using depend cpp for source "common/hash.cpp"
+depend:	7 - Target "build-Linux2_6_24_16_server-Hardy-Release/common/hash.cpp.aap" is up-to-date
+depend:	8 - updating target "common/hash.hpp"
+depend:	8 - Target has no build commands and exists: "common/hash.hpp"
+depend:	5 - Target "build-Linux2_6_24_16_server-Hardy-Release/common/hash.o" is up-to-date
+depend:	5 - updating target "build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o"
+depend:	6 - Using dependency "build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o{filetype=object} : common/daemon.cpp{filetype=cpp}{depdir=build-Linux2_6_24_16_server-Hardy-Release}"
+depend:	7 - updating target "common/daemon.cpp"
+depend:	7 - Target has no build commands and exists: "common/daemon.cpp"
+depend:	7 - Using depend cpp for source "common/daemon.cpp"
+depend:	7 - Updating "build-Linux2_6_24_16_server-Hardy-Release/common/daemon.cpp.aap" from "common/daemon.cpp{buildcheck=$CC $CXX $CFLAGS $CXXFLAGS $CPPFLAGS 						      $?DEFINE $?INCLUDE}{depdir=build-Linux2_6_24_16_server-Hardy-Release}{filetype=cpp}{recursive=1}": "common/daemon.cpp" has changed
+note:	Warning; Filetype not recognized for "dummy", using "default"
+extra:	Using default for gcccheck aap from default
+extra:	Do gcccheck default -> default
+system:	g++ -E /tmp/tmpwhHIBW.c > /tmp/tmp5wuTAC
+system:	 g++   -Icommon -I../dependencies/asio-0.3.9/include -Wall   -MM common/daemon.cpp > build-Linux2_6_24_16_server-Hardy-Release/common/daemon.cpp.aap
+depend:	8 - updating target "common/daemon.hpp"
+depend:	8 - Target has no build commands and exists: "common/daemon.hpp"
+depend:	5 - Updating "build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o" from "common/daemon.cpp{filetype=cpp}{depdir=build-Linux2_6_24_16_server-Hardy-Release}": "common/daemon.hpp" has changed
+extra:	Do compile cpp -> object
+extra:	Shell commands for updating "build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o":
+system:	g++   -Icommon -I../dependencies/asio-0.3.9/include -O4 -Wall -c -o build-Linux2_6_24_16_server-Hardy-Release/common/daemon.o common/daemon.cpp
+log:	common/daemon.cpp: In function ‘int pyzor::wrapper(int, char**, pyzor::daemon_function_t, const char*)’:
+common/daemon.cpp:23: error: ‘cout’ is not a member of ‘std’
+common/daemon.cpp:23: error: ‘endl’ is not a member of ‘std’
+common/daemon.cpp:29: error: ‘cout’ is not a member of ‘std’
+common/daemon.cpp:29: error: ‘endl’ is not a member of ‘std’
+common/daemon.cpp: At global scope:
+common/daemon.cpp:46: error: expected ‘,’ or ‘...’ before ‘*’ token
+common/daemon.cpp:46: error: ISO C++ forbids declaration of ‘chat’ with no type
+common/daemon.cpp: In function ‘int pyzor::daemonize(int, char**, pyzor::daemon_function_t, uid_t, gid_t, int)’:
+common/daemon.cpp:74: error: ‘pid_file’ was not declared in this scope
+

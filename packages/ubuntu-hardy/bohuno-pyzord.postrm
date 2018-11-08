@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = purge ]; then
+    update-rc.d bohuno-pyzord remove >/dev/null;
+    if [ -d "/var/lib/bohuno-pyzord" ]; then
+        rm -rf /var/lib/bohuno-pyzord
+    fi
+fi
+
+exit 0

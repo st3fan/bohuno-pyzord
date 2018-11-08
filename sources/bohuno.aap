@@ -1,0 +1,7 @@
+
+all: bohuno-updated bohuno-pyzord bohuno-pyzord-setup
+
+:program bohuno-updated         : $COMMON bohuno/bohuno-updated.cpp common/database.cpp
+:program bohuno-pyzord          : $COMMON bohuno/bohuno-pyzord.cpp bohuno/bohuno-database.cpp
+:program bohuno-pyzord-setup    : $COMMON bohuno/bohuno-pyzord-setup.cpp bohuno/bohuno-database.cpp
+

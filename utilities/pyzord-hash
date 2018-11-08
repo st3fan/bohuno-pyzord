@@ -1,0 +1,118 @@
+#!/usr/bin/env python
+
+import mimetools, re, sha, sys, tempfile
+
+class RFC822BodyCleaner(object):
+    
+    __slots__ = ['fp', 'multifile', 'curfile', 'type']
+
+    def __iter__(self):
+
+        return self
+    
+    def __init__(self, fp):
+        
+        msg            = mimetools.Message(fp, seekable=0)
+        self.type      = msg.getmaintype()
+        self.multifile = None
+        self.curfile   = None
+        
+        if self.type == 'text':
+            encoding = msg.getencoding()
+            if encoding in ('7bit', '8bit'):
+                self.curfile = msg.fp
+            else:
+                self.curfile = tempfile.TemporaryFile()
+                mimetools.decode(msg.fp, self.curfile, encoding)
+                self.curfile.seek(0)
+                
+        elif self.type == 'multipart':
+            import multifile
+            self.multifile = multifile.MultiFile(msg.fp, seekable=False)
+            self.multifile.push(msg.getparam('boundary'))
+            self.multifile.next()
+            self.curfile = self.__class__(self.multifile)
+            
+    def readline(self):
+
+        l = ''
+        if self.type in ('text', 'multipart'):
+            l = self.curfile.readline()
+
+        if self.type == 'multipart' and not l and self.multifile.next():
+            self.curfile = self.__class__(self.multifile)
+            # recursion.  Could get messy if
+            # we get a bunch of empty multifile parts
+            l = self.readline()
+        return l
+    
+    def next(self):
+        
+        l = self.readline()
+        if not l:
+            raise StopIteration
+        return l        
+
+#
+
+class DataDigester(object):
+    
+    # Minimum line length for it to be included as part of the digest.
+    
+    MINIMAL_LINE_LENGTH = 8
+
+    # If a message is this many lines or less, then we digest the whole message
+    
+    FULL_DIGEST_TRESHOLD = 4
+
+    # Regular expressions that are used to filter the lines of the message.
+
+    REGULAR_EXPRESSIONS = [    
+        re.compile(r'\S+@\S+'),                   # Email
+        re.compile(r'[a-z]+:\S+', re.IGNORECASE), # URL
+        re.compile(r'\S{10,}'),                   # Long String
+        re.compile(r'<.*?>'),                     # HTNL tag
+        re.compile(r'\s'),                        # Whitespace
+    ]
+
+    def digest(self, fp):
+
+        lines = []
+        
+        for line in fp:
+            for e in self.REGULAR_EXPRESSIONS:
+                line = e.sub('', line)
+            if len(line) >= self.MINIMAL_LINE_LENGTH:
+                lines.append(line)
+        
+        if len(lines) == 0:
+            return None
+
+        if len(lines) <= self.FULL_DIGEST_TRESHOLD:
+            return self._handle_small(lines)
+        else:
+            return self._handle_large(lines)
+
+    def _handle_small(self, lines):
+        """The file is small enough to be digested completely"""
+        digest = sha.new()
+        for line in lines:
+            digest.update(line.rstrip())
+        return digest.hexdigest()
+
+    def _handle_large(self, lines):
+        """The file is too big so we only take two pair of lines"""
+        digest = sha.new()
+        for (percentage, length) in [(20, 3), (60, 3)]:
+            offset = int(percentage * len(lines) / 100.0)
+            for i in range(length):
+                digest.update(lines[offset + i].rstrip())
+        return digest.hexdigest()
+
+#
+
+if __name__ == '__main__':
+
+    fp = open(sys.argv[1])
+    print DataDigester().digest(RFC822BodyCleaner(fp))
+

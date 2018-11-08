@@ -1,0 +1,16 @@
+
+common:
+ * Is the 'if (uid != 0 && gid != 0)' in daemon.cpp ok?
+ * Order of setgid/setuid is important! Set group first!
+
+bohuno-pyzord:
+
+ * Default user should be bohuno
+ * Make compatible with Debian's start-stop-daemon
+ * Create/remove a /var/run/bohuno-pyzord.pid file
+
+bohuno-pyzord-setup:
+
+ * Default user should be bohuno
+ * Needs a check so that it is run as root or user bohuno
+

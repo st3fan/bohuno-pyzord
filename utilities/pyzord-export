@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+
+import sys, struct, anydbm, encodings.hex_codec
+
+db = anydbm.open(sys.argv[1], "r")
+for k in db.keys():
+	if db.has_key(k):
+		parts = map(int, db[k].split(',')[1:])
+		sys.stdout.write(struct.pack('20sIIIIII', encodings.hex_codec.hex_decode(k)[0], parts[0], parts[1], parts[2], parts[3], parts[4
+], parts[5]))
+db.close()
+

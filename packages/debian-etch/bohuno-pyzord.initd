@@ -1,0 +1,55 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          bohuno-pyzord
+# Required-Start:    $network
+# Required-Stop:     $network
+# Should-Start:
+# Should-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Starts the Bohuno Pyzor daemon
+# Description:       The Bohuno Pyzor daemon
+### END INIT INFO
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/usr/sbin/bohuno-pyzord
+DESC="the Bohuno Pyzor daemon"
+NAME=bohuno-pyzord
+
+PIDFILE=/var/run/bohuno-pyzord.pid
+OPTIONS="-u pyzor -a 0.0.0.0"
+
+test -x $DAEMON || exit 0
+
+set -e
+
+case "$1" in
+    start)  
+        echo -n "Starting $DESC: "
+        start-stop-daemon -S -q -p $PIDFILE -x $DAEMON -- $OPTIONS
+        echo "$NAME."
+        ;;
+    
+    stop)   
+        echo -n "Stopping $DESC: "
+        start-stop-daemon -K -q -p $PIDFILE -x $DAEMON
+        echo "$NAME."
+        ;;
+    
+    restart)
+        echo -n "Restarting $DESC: "
+        start-stop-daemon -K -q -p $PIDFILE -x $DAEMON
+        sleep 3
+        start-stop-daemon -S -q -p $PIDFILE -x $DAEMON -- $OPTIONS
+        echo "$NAME."
+        ;;
+    
+    *)
+        N=/etc/init.d/$NAME
+        echo "Usage: $N {start|stop|restart}" >&2
+        exit 1
+        ;;
+esac
+
+exit 0

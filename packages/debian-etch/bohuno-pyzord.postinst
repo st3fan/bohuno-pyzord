@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "configure" ]; then
+    adduser --system --quiet --no-create-home --home /nonexistent --group bohuno
+    if [ ! -d "/var/lib/bohuno-pyzord" ]; then
+        mkdir -p /var/lib/bohuno-pyzord
+        chown bohuno:bohuno /var/lib/bohuno-pyzord
+    fi
+    update-rc.d bohuno-pyzord defaults 20 >/dev/null
+fi
+
+invoke-rc.d bohuno-pyzord start
+
+exit 0

@@ -1,0 +1,13 @@
+
+all: pyzord-master pyzord-slave pyzord-server pyzord-api pyzord-import pyzord-export
+
+# Core Pyzor Daemons
+:program pyzord-master : $COMMON pyzor/pyzord-master.cpp common/master.cpp
+:program pyzord-slave : $COMMON pyzor/pyzord-slave.cpp common/slave.cpp
+:program pyzord-server : $COMMON pyzor/pyzord-server.cpp common/server.cpp common/database.cpp
+:program pyzord-api : $COMMON pyzor/pyzord-api.cpp common/database.cpp
+
+# These build but need an update I think
+:program pyzord-import : $COMMON pyzor/pyzord-import.cpp
+:program pyzord-export : $COMMON pyzor/pyzord-export.cpp
+

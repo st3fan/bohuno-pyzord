@@ -1,0 +1,67 @@
+
+COMMON		=	common/common.cpp
+                        common/hash.cpp
+			common/daemon.cpp
+			common/httpd.cpp
+			common/packet.cpp
+			common/record.cpp
+			common/statistics.cpp
+			common/syslog.cpp
+			common/update.cpp
+                        common/base64.cpp
+                        common/wget.cpp
+                        common/url.cpp
+                        common/license.cpp
+
+CXXFLAGS        =       -Wall
+
+LD              =       $CXX
+
+INCLUDE         =       -Icommon
+
+:variant PLATFORM
+         Leopard
+                INCLUDE         +=      -I/opt/local/include
+                LIBS            =       -L/opt/local/lib
+                                        -ldb
+                                        -lboost_regex-mt
+                                        -lboost_iostreams-mt
+                                        -lboost_filesystem-mt
+                                        -lboost_signals-mt
+                                        -lssl -lcrypto
+        Dapper
+                INCLUDE		+=	-I/usr/local/include -I/usr/local/include/boost-1_34_1
+                LIBS            =       /usr/local/lib/libboost_regex-gcc40-mt.a
+                                        /usr/local/lib/libboost_iostreams-gcc40-mt.a
+                                        /usr/local/lib/libboost_filesystem-gcc40-mt.a
+                                        /usr/local/lib/libboost_signals-gcc40-mt.a
+                                        /usr/local/lib/libdb-4.6.a
+                                        -lssl -lcrypto -lpthread -ldl -lz
+         Gutsy
+                INCLUDE		+=	-I/usr/local/include -I/usr/local/include/boost-1_34_1
+                LIBS            =       /usr/local/lib/libboost_regex-gcc41-mt.a
+                                        /usr/local/lib/libboost_iostreams-gcc41-mt.a
+                                        /usr/local/lib/libboost_filesystem-gcc41-mt.a
+                                        /usr/local/lib/libboost_signals-gcc41-mt.a
+                                        /usr/local/lib/libdb-4.6.a
+                                        -lssl -lcrypto -lpthread -ldl -lz
+
+         Hardy
+                INCLUDE		+=	-I../dependencies/asio-0.3.9/include
+                LIBS            =       -lboost_regex
+                                        -lboost_iostreams
+                                        -lboost_filesystem
+                                        -lboost_signals
+                                        -ldb
+                                        -lssl -lcrypto -lpthread -ldl -lz
+
+:variant BUILD
+         Release
+                OPTIMIZE=4
+         Debug
+                OPTIMIZE=0
+                DEBUG=yes
+
+:child pyzor.aap
+:child bohuno.aap
+

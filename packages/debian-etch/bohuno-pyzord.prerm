@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+if [ -x "/etc/init.d/bohuno-pyzord" ]; then
+    invoke-rc.d bohuno-pyzord stop || exit $?
+fi
+
+exit 0

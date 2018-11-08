@@ -1,0 +1,51 @@
+#!/usr/bin/env python
+
+import socket, sys, time
+
+def encodeMessage(message):
+    s = ""
+    for k,v in message.iteritems():
+        s += "%s: %s\n" % (k,v)
+    return s
+
+def decodeMessage(message):
+    m = {}
+    for l in message.split("\n"):
+        if len(l) != 0:
+            k,v = l.split(": ")
+            m[k] = v
+    return m
+
+def sendMessage(message, host = "127.0.0.1", port = 24441):
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.sendto(encodeMessage(message), 0, (host, int(port)))
+    (packet,address) = s.recvfrom(8192)
+    return decodeMessage(packet)
+
+# pyzord-query report|whitelist|check hash [server [port]]
+
+message = {
+    'PV': '2.0',
+    'Thread': int(time.time()),
+    'User': 'anonymous',
+    'Time': int(time.time()),
+    'Sig': 'abc123',
+    'Op': sys.argv[1],
+    'Op-Digest': sys.argv[2]
+ }
+
+print "======== Request:"
+for k,v in message.items():
+    print "%s: %s" % (k,v)
+
+if len(sys.argv) == 5:
+    m = sendMessage(message, sys.argv[3], sys.argv[4])
+elif len(sys.argv) == 4:
+    print "Boe"
+    m = sendMessage(message, sys.argv[3])
+elif len(sys.argv) == 3:
+    m = sendMessage(message)
+
+print "======= Response:"
+for k,v in m.items():
+    print "%s: %s" % (k,v)
